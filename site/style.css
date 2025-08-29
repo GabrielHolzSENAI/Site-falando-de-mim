@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #313131;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.perfil {
+    position: fixed;   /* fixa no canto da tela */
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: girar 5s linear infinite;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  .foto:hover {
+    animation-play-state: paused; /* para a rotação no hover */
+  }
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
